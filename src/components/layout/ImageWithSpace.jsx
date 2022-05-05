@@ -18,7 +18,7 @@ const StyledImage = styled.div`
   }
 `
 const StyledContainer = styled.div`
-  background-color: white;
+  background-color: ${props => props.theme.white};;
   padding: 30px 50px;
   
   @media (min-width: ${WIDTH_BREAK}) {
@@ -31,6 +31,7 @@ const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 `
 
 function ImageWithSpace ({ children, image }) {
